@@ -1,21 +1,32 @@
-#logo{
-    width: 100%;
-    height: 200px;
-    position: relative;
-    top: 0;
-    left: 0;
+#logo {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-.navImages{
-    position: relative;
-    top: 0;
-    left: 0;
+.navImages {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-#pinkLogo{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 30px;
-    left: 50%;
+#pinkLogo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+}
+
+.cards {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+}
+
+.cardsColor{
+    background-color: #c8c8c8;
 }
