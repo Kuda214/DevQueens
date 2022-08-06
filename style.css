@@ -1,0 +1,52 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    height: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  li a {
+    font-weight: bolder;
+    font-size: 30px;
+    display: block;
+    color: #000;
+    padding: 60px 50px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+  .container{
+    width: 100%;
+  }
+
+  .top{
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 40pt;
+    font-weight: bolder;
+  }
+
+  @media only screen and (min-width: 768px) {
+    iframe{
+      height: 25em;
+      /* height: 100%; */
+    }
+    .card{
+      width: 75%;
+      height: 250px;
+    }
+  }
+
+  .card{
+    text-align: center;
+  }
+
+  
