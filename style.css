@@ -128,16 +128,19 @@ ul {
   
       }
       
-      .cards {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 150px;
-    height: 60px;
-    text-align: center;
-  }
+
   
   .cardsColor{
       background-color: #c8c8c8;
   }
+
+  .red{
+    background-color: pink;
+  }
+.card-img-top{
+    height: 150px;
+}
+  
   
   
   
