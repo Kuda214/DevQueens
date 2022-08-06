@@ -40,9 +40,10 @@
 
   }
   
-  .topnav a:hover {
-    background-color: #5c6b83;
-    color: white;
+  .cards:hover {
+    background-color: white;
+    width: 160px;
+    height: 70px;
   }
   
   .topnav a.active {
@@ -74,16 +75,33 @@
     text-align: center;
     text-decoration: none;
 
-    }
+  }
     
-    .cards {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  width: 150px;
-  height: 60px;
-  text-align: center;
-}
+  .cards {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    border: white;
+    cursor: pointer;
+  }
 
-.cardsColor{
-    background-color: #c8c8c8;
-}
+  .cardsColor{
+      background-color: #c8c8c8;
+  }
 
+  .panickColor:hover{
+    background-color: #f46b8b;
+    
+  }
+
+  .panickColor{
+    background-color: #EF9CAF;
+  }
+
+  #voiceRecorder {
+    margin-bottom: 30px;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 50px;
+  }
