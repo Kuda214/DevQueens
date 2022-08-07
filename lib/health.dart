@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'chat.dart';
 import 'info.dart';
 import 'panic.dart';
 
@@ -15,6 +16,7 @@ class HealthState extends State<Health> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      floatingActionButton: buildChatButton(context),
       body: Column(
         children: <Widget>[
           appbarWidget(MediaQuery.of(context).size, context, "Health Center"),
@@ -29,6 +31,15 @@ class HealthState extends State<Health> {
     );
   }
 }
+
+Widget buildChatButton(context) => FloatingActionButton(
+      onPressed: () {Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Chat()),
+              );},
+      backgroundColor: const Color(0xFFEF9CAF),
+      child: const Icon(Icons.chat),
+    );
 
 class Admin extends StatelessWidget {
   const Admin({Key? key}) : super(key: key);

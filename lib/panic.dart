@@ -22,6 +22,7 @@ class PanicState extends State<Panic> {
             style: TextStyle(color: Colors.green),
             textAlign: TextAlign.center,
           ),
+          const Image(image: AssetImage('assets/Pictures/SOUND_again 1.png')),
           const SizedBox(
             height: 20,
           ),

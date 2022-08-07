@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'info.dart';
-import 'panic.dart';
 
 class Ask extends StatefulWidget {
   const Ask({Key? key}) : super(key: key);
@@ -39,11 +36,20 @@ class Admin extends StatelessWidget {
 
     return Flexible(
         child: ListView(children: [
-      buildCard('Anonymous', 'assets/Pictures/violent-g34c0f86bd_1920 1.png',
+      buildCard(
+          context,
+          'Anonymous',
+          'assets/Pictures/violent-g34c0f86bd_1920 1.png',
           'My husband of 12 years layed his hands on me for the first time. My family members told me to leave the mariage. I have told the mthat this man just had a minor rage.Everyone thinks I am insane, I really love this man and I wouldn’t want my kids to grow up without a father figure. What do you guys think?'),
-      buildCard('Anonymous', 'assets/Pictures/violent-g34c0f86bd_1920 1.png',
+      buildCard(
+          context,
+          'Anonymous',
+          'assets/Pictures/violent-g34c0f86bd_1920 1.png',
           'My husband of 12 years layed his hands on me for the first time. My family members told me to leave the mariage. I have told the mthat this man just had a minor rage.Everyone thinks I am insane, I really love this man and I wouldn’t want my kids to grow up without a father figure. What do you guys think?'),
-      buildCard('Anonymous', 'assets/Pictures/violent-g34c0f86bd_1920 1.png',
+      buildCard(
+          context,
+          'Anonymous',
+          'assets/Pictures/violent-g34c0f86bd_1920 1.png',
           'My husband of 12 years layed his hands on me for the first time. My family members told me to leave the mariage. I have told the mthat this man just had a minor rage.Everyone thinks I am insane, I really love this man and I wouldn’t want my kids to grow up without a father figure. What do you guys think?')
     ]));
   }
@@ -119,7 +125,39 @@ Widget searchBar(BuildContext context) {
   ])));
 }
 
-Widget buildCard(String title, String imageAsset, String message) {
+@override
+Widget commentField(BuildContext context) {
+  return Material(
+      child: SingleChildScrollView(
+          child: Column(children: <Widget>[
+    Container(
+      margin: const EdgeInsets.all(8),
+      height: 45,
+      child: TextField(
+        onChanged: (value) => search(value),
+        decoration: InputDecoration(
+            filled: true,
+            fillColor: const Color(0xFFD9B4BC),
+            contentPadding: const EdgeInsets.all(0),
+            prefixIcon: const Icon(
+              Icons.mail,
+              color: Colors.black45,
+            ),
+            border: OutlineInputBorder(
+              borderSide: const BorderSide(color: Colors.red, width: 1.0),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            hintStyle: const TextStyle(
+              fontSize: 14,
+            ),
+            hintText: "Comment..."),
+      ),
+    ),
+  ])));
+}
+
+Widget buildCard(
+    BuildContext context, String title, String imageAsset, String message) {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: Card(
@@ -130,8 +168,21 @@ Widget buildCard(String title, String imageAsset, String message) {
       children: [
         Image(image: AssetImage(imageAsset)),
         Text(message),
-        TextButton(onPressed: () {}, child: const Text('Comment'))
-        // Text()
+        ExpansionTile(
+          title: const Text('Comments'),
+          initiallyExpanded: false,
+          children: [
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: Text(
+                  'Ava Girl, once he has the nerves to do that to you he will never stop. Unless he really seeks for proper psycological help. It’s not okay , Report him to the police please. Take from a person who has been through this before @ 12:23'),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            commentField(context),
+          ],
+        )
       ],
     )),
   );
