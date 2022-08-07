@@ -16,13 +16,13 @@
         </div>
         <div class="topnav">
            
-            <a href="leaderboard.html">About Us |   </a>
+            <a href="../home.html/#about">About Us |   </a>
     
             <a href="competitions.html"> Contact Us  &nbsp; &nbsp; &nbsp; | </a>
             <a href="tipsAndTricks.html">Alert &nbsp; &nbsp; &nbsp;| </a>
-            <a href="./quiz/homework_page.html">Health &nbsp; &nbsp; &nbsp;| </a>
-            <a  href="./quiz/quiz_main_page.html">Info Center &nbsp; &nbsp; &nbsp;| </a>
-            <a  class="active" href="./homepage.html">Home  &nbsp; &nbsp; &nbsp;| </a>
+            <a href="./HealthCenter/index.html">Health &nbsp; &nbsp; &nbsp;| </a>
+            <a  href="../infoCenter.html">Info Center &nbsp; &nbsp; &nbsp;| </a>
+            <a  class="active" href="../home.html">Home  &nbsp; &nbsp; &nbsp;| </a>
         </div>
     </header>
 
@@ -34,16 +34,21 @@
     </div>
 
     <div class="optionsContainer">
-        <div class="divOptions">
-            <text class="divHeadings">Get a way forwad from our trained Chat Bot</text> <br>
+        <div class="divOptions" onclick="chackbot()">
+            <text class="divHeadings">Get a way forward from our trained Chat Bot</text> <br>
             <text class="divInfo">You would need to tell the bot your symptoms, the bot would then give you the best possible solution forward</text>
         </div>
 
         <div class="divOptions">
             <text class="divHeadings">Speak to our health professional</text> <br>
-            <text  class="divInfo">Psycologists, Health Advisors, Nurses, Virtual consulats with doctors</text>
+            <text  class="divInfo">Psychologists, Health Advisors, Nurses, Virtual consulats with doctors</text>
         </div>
     </div>
 
+    <script>
+        function chackbot() {
+            window.location.href = "../ChatBot/index.html";
+        }
+    </script>
 </body>
 </html>
