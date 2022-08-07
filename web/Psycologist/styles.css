@@ -1,0 +1,257 @@
+#logo{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.navImages{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#pinkLogo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #C8C8C8;
+    /* margin-top: 5%; */
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 1%;
+    
+  }
+  
+  .topnav a {
+    float: right;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 15px;
+
+  }
+  
+  .topnav a:hover {
+    background-color: #5c6b83;
+    color: white;
+  }
+  
+  .topnav a.active {
+    
+    color: #ff6083;
+
+  }
+
+  #logo-name
+  {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+
+  #logoSize{
+    width: 60px;
+    height: 50px;
+    float: left;
+  }
+
+  #navName{
+    float: left;
+    color: #2E3972;
+    text-align: center;
+    text-decoration: none;
+
+    }
+  #secondTopSection{
+    flex-direction: row;
+    display: flex;
+    margin-Left: 2%;
+    margin-top: -2%;
+    border-bottom: 1px solid #DDD3D3;
+
+  }
+
+  #searchBar{
+    margin-left: auto;
+    padding-left: 2%;
+    padding-right: 5%;
+    background-color: #EBEBEB ;
+    margin-right: 2%;
+    border-radius: 10%;
+    margin-top: -1%;
+    width: 15%;
+    height:35px;
+  }
+
+  #PageHeader{
+    font-weight: 'bold';
+    font-size: 24px;
+    margin-top: -1%;
+  }
+
+  .postDiv{
+    margin-Left: 10%;
+    margin-top: 2%;
+    background-color: #d9d9d9;
+    width: 80%;
+    height: 500px;
+  }
+
+  .postContent
+  {
+    background-color: #F5F1F1;
+    width: 45%;
+    height: 500px ;
+    padding-left: 2%;
+    border-right: 3px solid #fff;
+    /* left: 0; */
+   
+  }
+
+  .timeStamp{
+    color: #B7B5B5;
+    margin-left: 65%;
+    /* right: 0; */
+
+  }
+  .commentsSection{
+    right: 8%;
+   
+    width: 40%;
+  }
+
+  .user{
+    border-bottom: 1px solid #d9d9d9;
+    width:98%;
+    padding-top: 2%;
+    
+  }
+
+  .postImg{
+    width: 80%;
+    height: 250px;
+  }
+
+  .postText{
+    padding: 4%;
+  }
+
+  .verticalDivider{
+    border-right:5px solid black;
+    padding: 5%;
+    height: 600px;
+  
+  }
+
+  .split {
+    /* height: 100%; */
+    width: 45%;
+    position: absolute;
+     z-index: 1;
+
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .split1 {
+    /* height: 100%; */
+    margin-top: 1%;
+    margin-right: 3%;
+    width: 33%;
+    position: absolute;
+     z-index: 1;
+
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .bold{
+    font-weight: bold;
+  }
+
+  .profile{
+    width: 50px;
+    height:50px;
+    border-radius: 60%;
+    border: 1px solid #D6A0AB;
+    margin-right: 1%;
+  }
+
+  .comment{
+    background-color: #F5F3F3;
+    padding: 2%;
+  }
+
+  #myComment{
+    bottom: auto;
+    width: 80%;
+    float: left;
+    width: 80%;
+    height: 40px;
+    margin-top: 20%;
+    
+  }
+
+  #submit{
+    float: right;
+    /* font-weight: bold; */
+    background-color: #D6A0AB;
+    margin-top: 22%;
+  }
+
+  .instructionIcon
+  {
+    margin-left: 40%;
+    margin-top: 20%;
+  }
+  #myFile{
+    margin-left: 30%;
+    margin-top: 5% ;
+  }
+
+  button {
+    background-color: #D6A0AB;
+    width: 20%;
+    height: 60px;
+
+  }
+  p {
+    text-align: center;
+  }
+  #demo{
+    color: #D6A0AB;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  #chatDiv{
+    width: 50%;
+    height: 300px;
+    background-color: #F5F3F3;
+    justify-self: center;
+    /* text-align: center; */
+    margin-left: 5%;
+    padding: 2%;
+    margin-top: 2% ;
+  }
+
+  .msg{
+    background-color: #D6A0AB;
+    width: 40%;
+    padding: 1%;
+    border-radius: 10%;
+    margin-left: 5%;
+
+  }
