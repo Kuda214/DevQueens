@@ -16,11 +16,11 @@
         </div>
         <div class="topnav">
            
-            <a href="../home.html/#about">About Us |   </a>
+            <a href="../home.html">About Us |   </a>
     
             <a href="competitions.html"> Contact Us  &nbsp; &nbsp; &nbsp; | </a>
-            <a href="tipsAndTricks.html">Alert &nbsp; &nbsp; &nbsp;| </a>
-            <a href="./HealthCenter/index.html">Health &nbsp; &nbsp; &nbsp;| </a>
+            <a href="../Catalog.html">  Catalog &nbsp; &nbsp; &nbsp; </a>            
+            <a href="index.html">Health &nbsp; &nbsp; &nbsp;| </a>
             <a  href="../infoCenter.html">Info Center &nbsp; &nbsp; &nbsp;| </a>
             <a  class="active" href="../home.html">Home  &nbsp; &nbsp; &nbsp;| </a>
         </div>
@@ -28,7 +28,7 @@
 
   <br><br>
     <div id="secondTopSection">
-        <p id="PageHeader">Ask My Peers</p>
+        <p id="PageHeader">Health Services</p>
         <div id="searchBar"><Text>Search... </Text>
         </div>
     </div>
@@ -40,7 +40,7 @@
             <text class="divInfo">You would need to tell the bot your symptoms, the bot would then give you the best possible solution forward</text>
         </div>
 
-        <div class="divOptions">
+        <div class="divOptions" onclick="professional()">
             <text class="divHeadings">Speak to our health professional</text> <br>
             <text  class="divInfo">Psychologists, Health Advisors, Nurses, Virtual consulats with doctors</text>
         </div>
@@ -49,6 +49,10 @@
     <script>
         function chackbot() {
             window.location.href = "../ChatBot/index.html";
+        }
+
+        function professional() {
+            window.location.href = "../HealthProfessional/index.html";
         }
     </script>
 </body>

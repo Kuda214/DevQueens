@@ -133,6 +133,7 @@ ul {
       background-color: #c8c8c8;
   }
 
+ 
   .red{
     background-color: pink;
   }
@@ -140,5 +141,16 @@ ul {
     height: 150px;
 }
   
-  
+.btn{
+    
+    background-color: pink;
+    font-size: larger;
+
+    
+}
+
+.form-container{
+    justify-content: center;
+    text-align: center;
+} 
   
